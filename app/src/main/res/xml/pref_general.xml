@@ -1,0 +1,44 @@
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+    <EditTextPreference
+        android:key="station1"
+        android:title="@string/title_station_1"
+        android:selectAllOnFocus="true"
+        android:inputType="number"
+        android:singleLine="true"
+        android:maxLines="1" />
+    <EditTextPreference
+        android:key="station2"
+        android:title="@string/title_station_2"
+        android:selectAllOnFocus="true"
+        android:inputType="number"
+        android:singleLine="true"
+        android:maxLines="1" />
+    <EditTextPreference
+        android:key="station3"
+        android:title="@string/title_station_3"
+        android:selectAllOnFocus="true"
+        android:inputType="number"
+        android:singleLine="true"
+        android:maxLines="1" />
+    <EditTextPreference
+        android:key="station4"
+        android:title="@string/title_station_4"
+        android:selectAllOnFocus="true"
+        android:inputType="number"
+        android:singleLine="true"
+        android:maxLines="1" />
+    <EditTextPreference
+        android:key="station5"
+        android:title="@string/title_station_5"
+        android:selectAllOnFocus="true"
+        android:inputType="number"
+        android:singleLine="true"
+        android:maxLines="1" />
+    <EditTextPreference
+        android:key="station6"
+        android:title="@string/title_station_6"
+        android:selectAllOnFocus="true"
+        android:inputType="number"
+        android:singleLine="true"
+        android:maxLines="1" />
+</PreferenceScreen>

@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginLeft="10dp"
+    android:layout_marginRight="10dp"
+    android:orientation="vertical">
+    <RelativeLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/channel"
+            android:id="@+id/req_channel"
+            android:layout_marginTop="15dp" />
+
+        <Spinner
+            android:layout_width="205dp"
+            android:layout_height="wrap_content"
+            android:entries="@array/no_channel_a"
+            android:id="@+id/spinner_request"
+            android:layout_alignParentRight="true"
+            android:paddingTop="@dimen/abc_text_size_medium_material" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/period"
+            android:id="@+id/req_period"
+            android:layout_marginTop="20dp" />
+
+        <RelativeLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:gravity="right">
+            <RadioGroup
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id = "@+id/period_group"
+                android:layout_marginRight="120dp"
+                android:paddingTop="@dimen/abc_text_size_medium_material">
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/radio_current"
+                    android:id="@+id/radio_current"
+                    android:checked="true" />
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/radio_last_10"
+                    android:id="@+id/radio_last_10" />
+            </RadioGroup>
+
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/submit"
+        android:id="@+id/btnReq"
+        android:layout_gravity="center_horizontal"
+        android:onClick="reqDataBtn" />
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Data Record"
+        android:id="@+id/data_record"
+        android:textAppearance="@style/header_remote_settings"
+        android:layout_marginTop="20dp"
+        android:textAlignment="center"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center_horizontal" />
+    <View style="@style/Divider"/>
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <EditText
+            android:id="@+id/custom_date_time"
+            android:layout_width="125dp"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/abc_text_size_small_material"
+            android:focusable="false"
+            android:layout_marginLeft="5dp"
+            />
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/submit"
+            android:id="@+id/btnReqRecord"
+            android:layout_alignParentRight="true"
+            android:gravity="right"
+            android:onClick="reqRecordBtn" />
+    </RelativeLayout>
+
+</LinearLayout>

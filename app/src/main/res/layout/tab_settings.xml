@@ -1,0 +1,328 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layout_marginLeft="10dp"
+    android:layout_marginRight="10dp">
+
+    <RelativeLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/station_name"
+            android:id="@+id/station_name_label"
+            android:layout_marginTop="15dp"/>
+
+        <EditText
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/station_name"
+            android:inputType="text"
+            android:textSize="@dimen/abc_text_size_small_material"
+            android:layout_alignParentRight="true" />
+    </RelativeLayout>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/submit"
+        android:id="@+id/btnReq"
+        android:layout_gravity="right" />
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/calibration"
+        android:id="@+id/textView"
+        android:textAppearance="@style/header_remote_settings"
+        android:layout_marginTop="20dp"
+        android:textAlignment="center"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center_horizontal" />
+    <View style="@style/Divider"/>
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/channel"
+                android:id="@+id/calibration_channel" />
+
+            <Spinner
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/no_channel_cal"
+                android:entries="@array/no_channel_a"
+                android:spinnerMode="dialog"
+                android:layout_alignParentRight="true"
+                />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/abbr_grad"
+                android:id="@+id/calibration_gradient"
+                
+                android:layout_marginTop="5dp" />
+            <EditText
+                android:id="@+id/gradient"
+                android:layout_width="70dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:textSize="@dimen/abc_text_size_small_material"
+                android:inputType="numberDecimal"
+                android:textAlignment="gravity"
+                android:gravity="right"
+                android:layout_marginTop="-5dp"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                
+                android:text="@string/abbr_const"
+                android:id="@+id/calibration_constanta" />
+
+            <EditText
+                android:id="@+id/consts"
+                android:layout_width="70dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:textSize="@dimen/abc_text_size_small_material"
+                android:inputType="numberDecimal"
+                android:textAlignment="gravity"
+                android:gravity="right"
+                android:layout_marginTop="-10dp" />
+
+        </RelativeLayout>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/submit"
+            android:id="@+id/btnCal"
+            android:layout_gravity="right"
+            />
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/type_unit"
+        android:id="@+id/title_type"
+        android:textAppearance="@style/header_remote_settings"
+        android:layout_marginTop="20dp"
+        android:textAlignment="center"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center_horizontal" />
+    <View style="@style/Divider"/>
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/channel"
+                android:id="@+id/unit_channel" />
+
+            <Spinner
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/no_channel_unit"
+                android:entries="@array/no_channel_a"
+                android:gravity="center_vertical"
+                android:layout_marginTop="5dp"
+                android:layout_alignParentRight="true"
+                android:contentDescription="@string/channel_no"
+                android:spinnerMode="dialog" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/type"
+                android:id="@+id/unit_type" />
+
+            <Spinner
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/channel_type"
+                android:entries="@array/channel_type_list"
+                android:gravity="center_vertical"
+                android:layout_marginTop="5dp"
+                android:layout_alignParentRight="true"
+                android:contentDescription="@string/channel_no"
+                android:spinnerMode="dialog" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/unit"
+                
+                android:id="@+id/unit_unit" />
+            <EditText
+                android:layout_width="50sp"
+                android:layout_height="wrap_content"
+                android:id="@+id/channel_unit"
+                android:layout_marginRight="5dp"
+                android:textSize="@dimen/abc_text_size_small_material"
+                android:layout_alignParentRight="true"
+                android:maxLength="3"
+                android:inputType="text" />
+
+        </RelativeLayout>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/submit"
+            android:id="@+id/btnUnit"
+            android:layout_gravity="right"
+            />
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/interval"
+        android:id="@+id/title_interval"
+        android:textAppearance="@style/header_remote_settings"
+        android:layout_marginTop="20dp"
+        android:textAlignment="center"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center_horizontal" />
+    <View style="@style/Divider"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/channel"
+                
+                android:id="@+id/interval_channel" />
+
+            <Spinner
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/interval_channel_label"
+                android:entries="@array/no_channel_a"
+                android:contentDescription="@string/channel_no"
+                android:spinnerMode="dialog"
+                android:layout_alignParentRight="true"
+                 />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/length"
+                android:id="@+id/interval_length_label"
+                
+                android:layout_marginTop="5dp" />
+            <EditText
+                android:layout_width="50sp"
+                android:layout_height="wrap_content"
+                android:id="@+id/interval_length"
+                android:maxLength="3"
+                android:layout_alignParentRight="true"
+                android:inputType="number"
+                android:textIsSelectable="false"
+                android:textSize="@dimen/abc_text_size_small_material"
+                android:textAlignment="gravity"
+                android:gravity="right"
+                android:layout_marginTop="-5dp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/unit"
+                
+                android:id="@+id/interval_unit_label" />
+
+            <Spinner
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/interval_unit"
+                android:entries="@array/interval_unit_list"
+                android:layout_marginTop="5dp"
+                android:contentDescription="@string/unit"
+                android:layout_alignParentRight="true"
+                android:spinnerMode="dialog"
+                android:gravity="right" />
+
+        </RelativeLayout>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/submit"
+            android:id="@+id/btnInterval"
+
+            android:layout_gravity="right" />
+    </LinearLayout>
+
+</LinearLayout>
+</ScrollView>

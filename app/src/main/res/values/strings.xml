@@ -1,0 +1,88 @@
+<resources>
+    <string name="app_name">Unidalog Remote</string>
+    <string name="title_station_1">Stasiun LIPI (Bandung)</string>
+    <string name="title_station_2">Stasiun Pemda (Cimahi)</string>
+    <string name="title_station_3">Stasiun Badau (Belitung)</string>
+    <string name="title_station_4">Stasiun Muaro Anai (Sumbar)</string>
+    <string name="title_station_5">Stasiun BP3U (Sumsel)</string>
+    <string name="title_station_6">Stasiun Pel. Bungus (Sumbar)</string>
+
+    <string name="radio_current">Current</string>
+    <string name="radio_last_10">Last 10</string>
+    <string name="radio_custom">Custom</string>
+
+    <string name="radio_enabled">Enabled</string>
+    <string name="radio_disabled">Disabled</string>
+
+    <string name="submit">Submit</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_example">Example action</string>
+
+    <string name="action_settings">Settings</string>
+
+<!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string-array name="parameter_station_a">
+        <item>Tinggi Muka Air</item>
+        <item>Arah Angin</item>
+        <item>Kecepatan Angin</item>
+        <item>Suhu</item>
+        <item>Kelembaban</item>
+        <item>Radiasi Matahari</item>
+        <item>Curah Hujan</item>
+        <item>Tegangan Baterai</item>
+    </string-array>
+
+    <string name="station_name">Station Name</string>
+    <string name="calibration">Kalibrasi</string>
+    <string name="abbr_const">Constanta</string>
+    <string name="abbr_grad">Gradient</string>
+    <string name="channel">Channel</string>
+    <string name="type_unit">Type and Unit</string>
+    <string name="channel_no">No Channel</string>
+    <string name="unit">Unit</string>
+    <string name="type">Type</string>
+    <string name="length">Interval Length</string>
+    <string name="interval">Interval</string>
+    <string name="period">Period</string>
+    <string name="pick_date_time">Pick Date and Time</string>
+    <string name="ok">OK</string>
+
+    <string-array name="no_channel_a">
+        <item>Tinggi Air</item>
+        <item>Arah Angin</item>
+        <item>Kecepatan</item>
+        <item>Suhu</item>
+        <item>Kelembaban</item>
+        <item>Radiasi</item>
+        <item>Curah Hujan</item>
+        <item>Tegangan</item>
+    </string-array>
+
+    <string-array name="no_channel_b">
+        <item>Tinggi Air</item>
+        <item>Arah Angin</item>
+        <item>Kecepatan</item>
+        <item>Suhu</item>
+        <item>Kelembaban</item>
+        <item>Oksigen Terlarut</item>
+        <item>Curah Hujan</item>
+        <item>Tegangan</item>
+    </string-array>
+
+    <string-array name="channel_type_list">
+        <item>4-20 mA</item>
+        <item>Digital</item>
+        <item>Counter</item>
+    </string-array>
+
+    <string-array name="interval_unit_list">
+        <item>Minute</item>
+        <item>Hour</item>
+    </string-array>
+
+</resources>
